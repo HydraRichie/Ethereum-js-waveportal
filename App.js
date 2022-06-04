@@ -5,7 +5,7 @@ import { ethers } from "ethers";
 import abi from "./WavePortal.json"
 function App() {
   //contract address
-  const contractAddress = " 0x999B5539e24078D89FF2Aa21cDCf5997fa4Ae9Ad";
+  const contractAddress = " ";
   //contract abi
   const contractAbi = abi.abi;
   //changing accounts
