@@ -3,7 +3,8 @@ const main = async () => {
   const waveContract = await waveContractFactory.deploy();
   await waveContract.deployed();
   console.log("Contract address:", waveContract.address);
-
+  const [deployer]=await ethers.getSigners();
+  console.log("The deployer is :",deployer.address);
   let waveCount;
   waveCount = await waveContract.TotalWaves();
   console.log(waveCount);
